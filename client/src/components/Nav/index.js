@@ -3,7 +3,7 @@ import "./style.css";
 
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg bg-success">
+    <nav className="navbar navbar-expand-lg">
     </nav>
   );
 }
