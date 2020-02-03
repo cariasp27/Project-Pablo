@@ -1,0 +1,10 @@
+#pict {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+#lnkd {
+    color: #0077b5;
+    margin-bottom: 25px;
+}
