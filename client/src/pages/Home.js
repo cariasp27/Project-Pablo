@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { List, ListItem, PageButton } from "../components/list.js";
+import { List, ListItem, PageButtons } from "../components/list.js";
 import { Col, Row, Container } from "../components/Grid";
 import { PaulPic, BucketPic} from "../components/imgs.js";
 import LinkedInButton from "../components/linkedin.js";
@@ -33,7 +33,7 @@ class Home extends Component {
 
                     </Col>
                     <Col size="md-3">
-                        <PageButton><span>Art</span></PageButton>
+                        <PageButtons></PageButtons>
                     </Col>
                     
                 </Row>

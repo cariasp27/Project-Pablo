@@ -1,5 +1,20 @@
 #blogfeed {
-    background: black;
+    display: block;
+    background: url("../img/escheresque_ste.png");
+    height: 500px;
+    overflow: scroll;
+    overflow-x:hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+
+}
+.btn {
+    height: 3rem;
+    width: 19rem;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
 }
 #bucket {
     float:right;
@@ -14,4 +29,8 @@
 }
 #lnkd {
     color: #0077b5;
+}
+
+.card {
+    margin-top: 25px;
 }

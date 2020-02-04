@@ -13,9 +13,22 @@ export function ListItem({ children }, props) {
     return <div className="card" onClick={props.onClick}>{children}</div>;
   }
 
-export function PageButton () {
+export function PageButtons() {
     return(
-        <Link to="/art" className="btn"></Link>
-    )
+        <div>
+                <Link to="/art" className="btn">
+                    <span className="text-secondary">Art</span>
+                </Link>
+                <Link to="/music" className="btn">
+                    <span className="text-secondary">Music</span>
+                </Link>
+                <Link to="/science" className="btn">
+                    <span className="text-secondary">Science</span>
+                </Link>
+                <Link to="/travel" className="btn">
+                    <span className="text-secondary">Travel</span>
+                </Link>
+        </div>
+    );
 }
   
