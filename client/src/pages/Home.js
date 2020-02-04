@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import API from "../utils/API";
 import { List, ListItem, PageButtons } from "../components/list.js";
 import { Col, Row, Container } from "../components/Grid";
 import { PaulPic, BucketPic} from "../components/imgs.js";
@@ -8,6 +9,15 @@ class Home extends Component {
     state = {
         blogfeed: [],
         bucketlist: [],
+    }
+    componentDidMount() {
+        this.loadBlog();
+    }
+    loadBlog = () => {
+        API.getRecentBlogFeed()
+        .then(res => this.setState({blogfeed: res.data})
+        )
+        .catch(err => console.log(err));
     }
     
     render() {
