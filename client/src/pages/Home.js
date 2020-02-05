@@ -19,6 +19,7 @@ class Home extends Component {
     }
     this.handleInputChange = this.handleInputChange.bind(this)
     this.handleFormSubmit = this.handleFormSubmit.bind(this)
+    this.loadBlog = this.loadBlog.bind(this)
 }   
     componentDidMount() {
         this.loadBlog();
@@ -30,6 +31,7 @@ class Home extends Component {
         console.log(this.state.title + "  Title");
         console.log(this.state.section + "  Section");
         console.log(this.state.body + "  Body");
+        console.log(this.state.blogfeed)
     };
 
     handleFormSubmit = event => {
@@ -45,8 +47,23 @@ class Home extends Component {
     }
     loadBlog = () => {
         API.getRecentBlogFeed()
-            .then(res => this.setState({ blogfeed: res.data })
-            )
+            .then(res => {
+                let response = res.data;
+                console.log(response)
+                let tempfeed = [];
+                for (let i=0; i < response.length; i++) {
+                    let post = {};
+                    let info = response[i];
+                    post.title = info.title;
+                    post.section = info.section;
+                    post.body = info.body;
+                    post.date = info.date;
+                    tempfeed.push(post);
+                    console.log(post);
+                }
+                this.setState({ blogfeed: tempfeed });
+                console.log(this.state.blogfeed);
+            })
             .catch(err => console.log(err + "you got here"));
     }
 
