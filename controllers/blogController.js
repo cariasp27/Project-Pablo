@@ -3,7 +3,7 @@ const db = require("../models");
 // Defining methods for the blogController
 module.exports = {
   findAll: function(req, res) {
-    console.log("you got this far")
+    console.log("You attempted to find all blog posts");
     db.BlogPost
       .find(req.query)
       .sort({ date: -1 })
@@ -17,6 +17,7 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
+    console.log("You attempted to create a new blog post")
     db.BlogPost
       .create(req.body)
       .then(dbModel => res.json(dbModel))
