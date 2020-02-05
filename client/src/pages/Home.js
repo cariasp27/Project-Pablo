@@ -17,7 +17,7 @@ class Home extends Component {
         API.getRecentBlogFeed()
         .then(res => this.setState({blogfeed: res.data})
         )
-        .catch(err => console.log(err));
+        .catch(err => console.log(err + "you got here"));
     }
     
     render() {

@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default {
     getRecentBlogFeed: function() {
-        return axios.get("/api/blog/getrecentfeed");
+        return axios.get("/api/blog/");
     },
     addNewPost: function(postData) {
         return axios.post("/api/blog/newpost");

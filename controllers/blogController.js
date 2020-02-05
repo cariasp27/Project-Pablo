@@ -3,6 +3,7 @@ const db = require("../models");
 // Defining methods for the blogController
 module.exports = {
   findAll: function(req, res) {
+    console.log("you got this far")
     db.BlogPost
       .find(req.query)
       .sort({ date: -1 })
