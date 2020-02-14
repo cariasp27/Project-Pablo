@@ -1,4 +1,20 @@
+#artholder{
+    max-height: 500px;
+    background-color: black;
+}
 #artlogo {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 }
+#personalcollection{
+    background-color: black;
+}
+/*
+Forces carousel image to be 100% width and not max width of 100%
+*/
+.carousel-item .img-fluid {
+    width: 10rem;
+    margin: auto;
+  }
+   
