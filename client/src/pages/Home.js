@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import API from "../utils/API";
+import Moment from "react-moment";
+import moment from "moment";
 import { List, ListItem, PageButtons } from "../components/list.js";
 import { Col, Row, Container } from "../components/Grid";
 import { PaulPic, BucketPic } from "../components/imgs.js";
@@ -57,7 +59,7 @@ class Home extends Component {
                     post.title = info.title;
                     post.section = info.section;
                     post.body = info.body;
-                    post.date = info.date;
+                    post.date = moment(info.date).format("MMMM Do YYYY");
                     tempfeed.push(post);
                     console.log(post);
                 }
@@ -72,7 +74,7 @@ class Home extends Component {
             <Container fluid>
                 <Row>
                     <Col size="md-3">
-                        <PaulPic></PaulPic>
+                        {/* <PaulPic></PaulPic> */}
                         <LinkedInButton></LinkedInButton>
                         <BucketPic></BucketPic>
                     </Col>
@@ -81,12 +83,22 @@ class Home extends Component {
                             the blogfeed items will be objects with a title, body, and date and topic/subject
                             upon clicking a post it will bring you to the post's passion page
                         */}
-                        <List>
-                            <ListItem>
-                                <h1>Inital Post</h1>
-                                <p>I am creating this Blog for my opinions and passions</p>
-                            </ListItem>
-                        </List>
+                        {this.state.blogfeed.length ? (
+                <List>
+                  {this.state.blogfeed.map(post => {
+                    return (
+                      <ListItem key={post._id}>
+                  <h1>{post.title}</h1>
+                    <h2>{post.section}</h2>
+                    <h5>{post.date}</h5>
+                    <p>{post.body}</p>
+                      </ListItem>
+                    );
+                  })}
+                </List>
+              ) : (
+                <h3>No Results to Display</h3>
+              )}
 
                     </Col>
                     <Col size="md-3">
@@ -109,13 +121,12 @@ class Home extends Component {
                                     className="form-control"
                                     placeholder="section"
                                 />
-                                <input
+                                <textarea
+                                id="bodybox"
                                 name="body"
                                     value={this.state.body}
                                     onChange={this.handleInputChange}
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="..."
+
                                 />
                                 <button type="submit" onClick={this.handleFormSubmit} className="btn btn-success">
                                     Submit
