@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Col, Row, Container } from "../components/Grid";
 import firstpic from "../img/Art/Personal Collection/Snapchat-2106152467.jpg";
+import secondpic from "../img/Art/Personal Collection/IMG_20190818_205617.jpg"
 import "./Art.css"
 
 
@@ -14,10 +15,13 @@ class Art extends Component {
                     <Col size="md-4"><p>Artists will go here</p>
                     </Col>
                     <Col size="md-8" id="artholder">
-                        <div id="personalcollection" className="carousel slide" data-ride="carousel">
+                        <div id="personalcollection" className="carousel-slide" data-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active" >
                                     <img class="d-block img-fluid" src={firstpic} alt="First Slide"></img>
+                                </div>
+                                <div className="carousel-item" >
+                                    <img class="d-block img-fluid" src={secondpic} alt="First Slide"></img>
                                 </div>
                             </div>
                             <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
