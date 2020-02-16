@@ -18,69 +18,151 @@ import "./Art.css"
 
 
 class Art extends Component {
-    // constructor() {
-    //     super ()
-    //     this.state = {
-    //         personalcollection: []
-    //     }
-    //     this.photoarray = this.photoarray.bind(this)
-    // }
-    // componentDidMount(){
-    //     this.photoarray();
-    // }
-    // photoarray = () => {
-    //     let pc =[];
-    //     for(i=1; i<= 13; i++){
-    //         pc.push((pic+i));
-    //     }
-    //     this.setState({personalcollection: pc});
-    //     console.log(this.state.personalcollection);
-    // }
+
     render() {
         return (
             <Container fluid>
-                <Row><img src="https://fontmeme.com/permalink/200213/38010f7573ea26919feb7028a5588f5a.png" alt="brush-fonts" id="artlogo"></img></Row>
                 <Row>
-                    <Col size="md-4"><p>Artists will go here</p>
+                    <Col size="md-4">
+                        <img src="https://fontmeme.com/permalink/200213/38010f7573ea26919feb7028a5588f5a.png" alt="brush-fonts" id="artlogo"></img>
+                        <p>Artists will go here</p>
                     </Col>
-                    <Col size="md-8" id="artholder">
-                    <Carousel>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={pic1}
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={pic2}
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src={pic4}
-      alt="Third slide"
-    />
-
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
+                    <Col size="md-4" id="artholder">
+                        <center><h3>Personal Art Collection</h3></center>
+                        <Carousel id="carri">
+                            <Carousel.Item>
+                                <img
+                                    className="d-block"
+                                    src={pic1}
+                                    alt="First slide"
+                                />
+                                <Carousel.Caption>
+                                    <h5>Pug by <a href="http://www.angelaoster.com/">Angela Oster</a></h5>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block"
+                                    src={pic2}
+                                    alt="Third slide"
+                                />
+                                <Carousel.Caption>
+                                    <h5>SpongeBob by Savanna Jankowski</h5>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block"
+                                    src={pic3}
+                                    alt="Third slide"
+                                />
+                                <Carousel.Caption>
+                                    <h5>Burger Gene</h5>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block"
+                                    src={pic4}
+                                    alt="First slide"
+                                />
+                                <Carousel.Caption>
+                                    <h5>Bob's Burgers Mandala</h5>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block"
+                                    src={pic5}
+                                    alt="Third slide"
+                                />
+                                <Carousel.Caption>
+                                    <h5>StarPop by mkh</h5>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block"
+                                    src={pic6}
+                                    alt="Third slide"
+                                />
+                                <Carousel.Caption>
+                                    <h5>Batman Crosshatch</h5>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block"
+                                    src={pic7}
+                                    alt="First slide"
+                                />
+                                <Carousel.Caption>
+                                    <h5>Adventure Time Cross Stitch by Sarah Osmolski</h5>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block"
+                                    src={pic8}
+                                    alt="Third slide"
+                                />
+                                <Carousel.Caption>
+                                    <h5>Binding of Isaac Cross Stitch by Sarah Osmolski</h5>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block"
+                                    src={pic9}
+                                    alt="Third slide"
+                                />
+                                <Carousel.Caption>
+                                    <h5>Gaston Cross Stitch by Sarah Osmolski</h5>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block"
+                                    src={pic10}
+                                    alt="Third slide"
+                                />
+                                <Carousel.Caption>
+                                    <h5>Totoro by Hayao Miyazaki</h5>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block"
+                                    src={pic11}
+                                    alt="Third slide"
+                                />
+                                <Carousel.Caption>
+                                    <h5>Pikachu Vinyl by <a href="http://vinylrecordart.com/">Sergio Andujar and Rick Sans</a></h5>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block"
+                                    src={pic12}
+                                    alt="Third slide"
+                                />
+                                <Carousel.Caption>
+                                    <h5>Kingdom Hearts Vinyl by <a href="http://vinylrecordart.com/">Sergio Andujar and Rick Sans</a></h5>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item>
+                                <img
+                                    className="d-block"
+                                    src={pic13}
+                                    alt="Third slide"
+                                />
+                                <Carousel.Caption>
+                                    <h5>Ohio Art</h5>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                        </Carousel>
+                    </Col>
+                    <Col size="md-4" id="artholder">
                     </Col>
                 </Row>
             </Container>
