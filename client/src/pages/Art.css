@@ -1,20 +1,27 @@
+a {
+    color: black
+}
 #artholder{
-    max-height: 500px;
+    max-height: 495px;
     background-color: black;
 }
 #artlogo {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10px;
+    width: 150%
 }
 #carri {
     height: auto;
+}
+.carousel-caption {
+    bottom: -25px;
 }
 h5 {
     color:black;
 }
 .d-block {
-    max-height: 500px;
+    max-height: 495px;
     margin: auto;
 }
 #personalcollection{
