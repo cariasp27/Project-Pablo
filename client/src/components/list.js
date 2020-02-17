@@ -16,16 +16,16 @@ export function ListItem({ children }, props) {
 export function PageButtons() {
     return(
         <div>
-                <Link to="/art" className="btn">
+                <Link to="/art" className="btn passion">
                     <span className="text-secondary">Art</span>
                 </Link>
-                <Link to="/music" className="btn">
+                <Link to="/music" className="btn passion">
                     <span className="text-secondary">Music</span>
                 </Link>
-                <Link to="/science" className="btn">
+                <Link to="/science" className="btn passion">
                     <span className="text-secondary">Science</span>
                 </Link>
-                <Link to="/travel" className="btn">
+                <Link to="/travel" className="btn passion">
                     <span className="text-secondary">Travel</span>
                 </Link>
         </div>

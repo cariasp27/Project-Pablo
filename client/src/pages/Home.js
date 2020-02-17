@@ -74,7 +74,7 @@ class Home extends Component {
             <Container fluid>
                 <Row>
                     <Col size="md-3">
-                        {/* <PaulPic></PaulPic> */}
+                        <PaulPic></PaulPic>
                         <LinkedInButton></LinkedInButton>
                         <BucketPic></BucketPic>
                     </Col>

@@ -37,7 +37,7 @@ class Art extends Component {
                                     alt="First slide"
                                 />
                                 <Carousel.Caption>
-                                    <h5>Pug by <a href="http://www.angelaoster.com/">Angela Oster</a></h5>
+                                    <h5>Pug by <a target="_blank" rel="noopener noreferrer" href="http://www.angelaoster.com/">Angela Oster</a></h5>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -137,7 +137,7 @@ class Art extends Component {
                                     alt="Third slide"
                                 />
                                 <Carousel.Caption>
-                                    <h5>Pikachu Vinyl by <a href="http://vinylrecordart.com/">Sergio Andujar and Rick Sans</a></h5>
+                                    <h5>Pikachu Vinyl by <a target="_blank" rel="noopener noreferrer" href="http://vinylrecordart.com/">Sergio Andujar and Rick Sans</a></h5>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -147,7 +147,7 @@ class Art extends Component {
                                     alt="Third slide"
                                 />
                                 <Carousel.Caption>
-                                    <h5>Kingdom Hearts Vinyl by <a href="http://vinylrecordart.com/">Sergio Andujar and Rick Sans</a></h5>
+                                    <h5>Kingdom Hearts Vinyl by <a target="_blank" rel="noopener noreferrer" href="http://vinylrecordart.com/">Sergio Andujar and Rick Sans</a></h5>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>

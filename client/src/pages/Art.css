@@ -10,6 +10,9 @@
 #carri {
     height: auto;
 }
+h5 {
+    color:black;
+}
 .d-block {
     max-height: 500px;
     margin: auto;
