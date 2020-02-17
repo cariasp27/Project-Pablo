@@ -19,6 +19,10 @@ import "./Art.css"
 
 class Art extends Component {
 
+    state = {
+        images: [{img:pic1}, {img:pic2}, {img:pic3}, {img:pic4}, {img:pic5}, {img:pic6}, {img:pic7}, {img:pic8}, {img:pic9}, {img:pic10}, {img:pic11}, {img:pic12}, {img:pic13}]
+    }
+
     render() {
         return (
             <Container fluid>
@@ -163,6 +167,20 @@ class Art extends Component {
                         </Carousel>
                     </Col>
                     <Col size="md-4" id="artholder">
+                    <Carousel id="carri">
+                            {this.state.images.map(image => {
+                                return (
+                                    <Carousel.Item>
+                                        <img
+                                        className="d-block"
+                                        src={image.img}
+                                        alt="art"
+                                        />
+
+                                    </Carousel.Item>
+                                )
+                            })}
+                            </Carousel>
                     </Col>
                 </Row>
             </Container>
