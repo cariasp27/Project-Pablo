@@ -22,9 +22,9 @@ class Art extends Component {
     state = {
         images: [
                 {img:pic1, alt: "Slide One", capt: "Pug", artist: "Angela Oster", link:"http://www.angelaoster.com/"},
-                {img:pic2, alt: "Slide Two", capt: "Spongebob", artist: "Savannah Jankowski", link:"#"},
-                {img:pic3, alt: "Slide Three" , capt: "Burger Gene" , artist: "" , link: ""},
-                {img:pic4, alt: "Slide Four" , capt: "Bob's Burger's Mandala" , artist: "" , link: ""},
+                {img:pic2, alt: "Slide Two", capt: "Spongebob", artist: "Savannah Jankowski", link:""},
+                {img:pic3, alt: "Slide Three" , capt: "Burger Gene" , artist: " Ashley Ross" , link: "https://www.thecuddlecult.com/"},
+                {img:pic4, alt: "Slide Four" , capt: "Bob's Burger's Mandala" , artist: "Ashley Ross" , link: "https://www.thecuddlecult.com/"},
                 {img:pic5, alt: "Slide Five" , capt: "Starpop" , artist: "mkh" , link: ""}, 
                 {img:pic6, alt: "Slide Six" , capt: "Batman Crosshatch" , artist: "" , link: ""},
                 {img:pic7, alt: "Slide Seven" , capt: "AdventureTime Cross Stitch" , artist: "Sarah Osmolski" , link: ""},
